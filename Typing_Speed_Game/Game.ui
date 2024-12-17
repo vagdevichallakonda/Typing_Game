@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>882</width>
+    <height>604</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>390</y>
+      <width>631</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="startb">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Start</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="playb">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Play Again</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="exitb">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Exit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="logoqq">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>881</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>101</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Microsoft YaHei&quot;;
+font: 50pt &quot;Quark Cheese - Personal Use&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Typing Speed Tester</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="story">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>571</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sudo</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 17pt &quot;Consolas&quot;;
+font: 20pt &quot;Sudo&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid;
+border-top-color : white;
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white;
+border-radius:5px;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>An exercise for people who are out of shape: Begin with a five-pound potato bag in each hand. Extend your arms straight out from your sides, hold them there for...</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="result">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>320</y>
+      <width>671</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Consolas&quot;;
+font: 14pt &quot;Monaco&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid;
+border-top-color : white;
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white;
+border-radius:8px;
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Start Typing Here...</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FinalResult">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>490</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;
+font: 16pt &quot;Monaco&quot;;
+color: rgb(0,168,84);
+border: 2px solid;
+border-top-color : white;
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white;
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string>WPM :Errors :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Timerqq">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>490</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;
+font: 16pt &quot;Monaco&quot;;
+color: rgb(255, 0, 4);
+border: 2px solid;
+border-top-color : white;
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white;
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string>Timer:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-70</x>
+      <y>-20</y>
+      <width>1331</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(119, 192, 255, 255), stop:1 rgba(0, 137, 255, 255));
+
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(195, 195, 195, 255), stop:1 rgba(169, 169, 169, 255));
+</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>logoqq</zorder>
+   <zorder>story</zorder>
+   <zorder>result</zorder>
+   <zorder>FinalResult</zorder>
+   <zorder>Timerqq</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="fontss.qrc"/>
+ </resources>
+ <connections/>
+</ui>
